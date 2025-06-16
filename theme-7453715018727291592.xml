@@ -1,61 +1,77 @@
+/* Základní nastavení fontů a pozadí */
 body {
-  background: #081120;
+  margin: 0;
+  background-color: #081120;
   color: #d0d0d0;
   font-family: 'Fira Code', monospace;
-  margin: 0;
-  padding: 0;
+  display: flex;
+  height: 100vh;
 }
 
-a.neon-link {
+/* Kontejner hlavního rozložení */
+.container {
+  display: flex;
+  width: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+  background: #0f131f;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 0 8px rgba(0, 200, 150, 0.3);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Neonový odkaz */
+.neon-link {
   color: #0fa;
   text-decoration: none;
   transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
-a.neon-link:hover {
+.neon-link:hover {
   color: #a0f;
   text-shadow: 0 0 8px #a0f;
 }
 
-.sidebar {
-  background: #0f131f;
-  border-radius: 6px;
-  box-shadow: 0 0 8px rgba(0, 200, 150, 0.3);
-  padding: 20px;
-  width: 240px;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
+/* Navigace */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
+nav ul li {
+  margin-bottom: 12px;
+}
+
+nav ul li a {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+/* Obsah stránky */
 .content {
-  margin-left: 260px;
-  padding: 20px;
+  flex-grow: 1;
+  padding: 40px;
 }
 
-h1, h2, h3 {
+/* Nadpisy */
+h1, h2 {
   color: #0fa;
-  font-family: 'Fira Code', monospace;
-  margin-top: 0;
+  margin: 0;
+  font-weight: 700;
 }
 
-.separator {
-  border-bottom: 1px solid #0fa;
-  margin: 20px 0;
-  box-shadow: 0 0 4px #0fa;
-}
-
-.box-neon {
-  background: #0f131f;
-  box-shadow: 0 0 12px #a0f;
-  border-radius: 6px;
-  padding: 15px;
-  margin-bottom: 24px;
-}
-
+/* Audio přehrávač */
 audio {
   width: 100%;
-  margin-top: 10px;
   outline: none;
+  background-color: #131926;
+  border-radius: 6px;
+  box-shadow: 0 0 8px rgba(160, 15, 255, 0.2);
 }
