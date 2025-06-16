@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SoftChaos - Pixel Dark Neon</title>
+
+  <!-- Google font Fira Code pro pixelový monospace styl -->
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet" />
+
+  <style>
+    /* Základní styl */
+    body {
+      margin: 0;
+      background: #081120;
+      color: #d0d0d0;
+      font-family: 'Fira Code', monospace;
+    }
+
+    a {
+      color: #0fa;
+      text-decoration: none;
+      transition: color 0.3s ease, text-shadow 0.3s ease;
+    }
+
+    a:hover {
+      color: #a0f;
+      text-shadow: 0 0 8px #a0f;
+    }
+
+    .container {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    aside.sidebar {
+      background: #0f131f;
+      padding: 20px;
+      width: 220px;
+      box-shadow: 0 0 10px rgba(160, 15, 255, 0.4);
+      border-radius: 6px 0 0 6px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    aside.sidebar h1 {
+      color: #0fa;
+      margin-bottom: 24px;
+      font-size: 24px;
+      letter-spacing: 1.5px;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li {
+      margin-bottom: 16px;
+    }
+
+    nav ul li a {
+      font-weight: bold;
+      font-size: 18px;
+      display: inline-block;
+      padding: 4px 0;
+      border-left: 4px solid transparent;
+      transition: border-color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      border-left: 4px solid #a0f;
+      color: #a0f;
+      text-shadow: 0 0 6px #a0f;
+    }
+
+    main.co
