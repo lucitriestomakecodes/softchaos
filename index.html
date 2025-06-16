@@ -2,33 +2,37 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>SoftChaos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <aside class="sidebar">
-      <h1><a href="#">🕸️ SoftChaos</a></h1>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Music</a></li>
-          <li><a href="#">About</a></li>
-        </ul>
-      </nav>
+  <aside class="sidebar">
+    <h1><a href="#" class="neon-link">SoftChaos</a></h1>
+    <nav>
+      <ul>
+        <li><a href="#" class="neon-link">Home</a></li>
+        <li><a href="#" class="neon-link">Blog</a></li>
+        <li><a href="#" class="neon-link">Music</a></li>
+        <li><a href="#" class="neon-link">About</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main class="content">
+    <h2>Welcome to SoftChaos</h2>
+    <p>This is your dark pixel-style blog. Links glow green and turn purple on hover.</p>
+
+    <div class="separator"></div>
+
+    <div class="box-neon">
+      <p>Here you can embed your music player or any other cool content.</p>
       <audio controls autoplay loop>
-        <source src="music.mp3" type="audio/mpeg">
-        Your browser doesn't support audio.
+        <source src="music.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
       </audio>
-    </aside>
-    <main class="content">
-      <h2>Welcome into the dark</h2>
-      <p>
-        This page is my. 
-      </p>
-    </main>
-  </div>
+    </div>
+  </main>
 </body>
 </html>
